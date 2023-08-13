@@ -358,3 +358,93 @@ th {
 	height: 100vh;
 }
 /* END */
+/* header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+} */
+
+.state-name {
+    margin: 0;
+}
+
+.main {
+    padding: 20px;
+}
+
+.scholarships {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.scholarships h2 {
+    margin-top: 0;
+}
+
+.scholarship-btn {
+    background-color: #088178;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: left;
+}
+
+.scholarship-details {
+    display: none;
+    background-color: #f9f9f9;
+    padding: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.scholarship-btn:hover + .scholarship-details {
+    display: block;
+}
+/* Add a transition to the scholarship details */
+.scholarship-details {
+    display: none;
+    background-color: #f9f9f9;
+    padding: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    opacity: 0; /* Initially hide */
+    transition: opacity 0.3s ease-in-out;
+    transition-delay: 0.5s; /* Delay before showing */
+}
+
+.scholarship-btn:hover + .scholarship-details {
+    opacity: 1; /* Show when hovered */
+    transition-delay: 0s; /* No delay on hover */
+}
+.scholarship a{
+ text-decoration-color: #ffffff;
+}
+.scholarship-link{
+ color:#E3E6F3;
+}
+.scholarship li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+
+.scholarship li a:hover,
+.scholarship li a.active{
+    color: #088178;
+}
+
+.scholarship li a.active::after,
+.scholarship li a:hover::after {
+    content: "";
+    width:30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
